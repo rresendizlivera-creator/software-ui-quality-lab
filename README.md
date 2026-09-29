@@ -2,6 +2,8 @@
 
 A responsive software QA portfolio demonstration by **Roberto Reséndiz Livera**. Uses fictional test cases to illustrate analytical presentation, multi-filter controls, accessible native inputs, summary KPIs, empty-result handling and CSV export.
 
+**[Live Demo — Open the QA dashboard](https://rresendizlivera-creator.github.io/software-ui-quality-lab/)**
+
 ## Try it locally
 
 No build step, API key, analytics service or backend is required. Serve the repository directory (ES modules will not normally work when opening an HTML file using `file://`):
