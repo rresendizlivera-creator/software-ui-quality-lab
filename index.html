@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Independent software and UI QA portfolio demonstration with accessible filters and CSV export.">
+<title>Software & UI Quality Lab | Roberto Reséndiz</title>
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="mast"><div class="wrap"><p class="eyebrow">INDEPENDENT QA PORTFOLIO DEMO</p><h1>Software & UI Quality Lab</h1>
+<p class="lead">A responsive, accessible test-case dashboard for a <strong>fictional dataset</strong>. Built with plain JavaScript, HTML and CSS.</p></div></header>
+<main id="main" class="wrap">
+<section aria-label="QA summary"><h2>QA overview</h2><div class="stats" id="stats" aria-live="polite"></div></section>
+<section class="panel" aria-labelledby="filters-heading"><div class="section-title"><h2 id="filters-heading">Explore test cases</h2><button type="button" id="export">Export filtered CSV</button></div>
+<form id="filters" role="search" autocomplete="off"><label>Search cases<input type="search" id="search" placeholder="ID, title, area or reviewer"></label>
+<label>Status<select id="status"><option>All</option><option>Open</option><option>Pass</option><option>Fail</option></select></label>
+<label>Priority<select id="priority"><option>All</option><option>Low</option><option>Medium</option><option>High</option><option>Critical</option></select></label>
+<button type="reset" class="ghost">Reset</button></form>
+<p id="count" role="status" aria-live="polite"></p>
+<div class="table-scroll"><table><caption class="sr-only">Synthetic software quality assurance test cases</caption><thead><tr><th scope="col">Case ID</th><th scope="col">Area</th><th scope="col">Check</th><th scope="col">Priority</th><th scope="col">Status</th><th scope="col">Reviewer</th></tr></thead><tbody id="case-rows"></tbody></table></div>
+</section>
+<section class="panel"><h2>What this demonstrates</h2><p>Filterable data, status and priority distinctions, keyboard-friendly form controls, adaptive layout, transparent calculations and CSV exports with formula-injection protection.</p><p class="note">All entries are illustrative and are not actual findings about any product or client. This dashboard is read-only; it does not save or transmit personal data.</p></section>
+</main><footer class="wrap">Roberto Reséndiz Livera · Independent portfolio demonstration · <a href="https://github.com/rresendizlivera-creator">GitHub profile</a></footer>
+</body></html>
